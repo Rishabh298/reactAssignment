@@ -1,0 +1,24 @@
+.cardViewContainer {
+    justify-content: center;
+    border: 1px solid black;
+    padding: 10px 30px 10px 30px;
+    height: 15rem;
+
+}
+
+.nameStyle {
+    margin-top: 10px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.emailStyle {
+    text-align: center;
+    font-size: 10px;
+    margin-top: 10px;
+}
+
+.profilePic {
+    align-self: center;
+}
