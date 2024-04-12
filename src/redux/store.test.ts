@@ -6,8 +6,8 @@ jest.mock('redux', () => ({
   applyMiddleware: jest.fn(),
 }));
 
-describe('Redux Store', () => {
-  it('is created with the expected reducer and middleware', () => {
+describe('Store', () => {
+  it('is created for testing reducer and middleware', () => {
     (applyMiddleware as jest.Mock).mockReturnValue(jest.fn());
     expect(createStore).toHaveBeenCalled();
   });
