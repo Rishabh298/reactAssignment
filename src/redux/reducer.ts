@@ -1,6 +1,6 @@
 import {ActionType} from './actionType';
 
-const initialState: any = {cardData: [], totalPage: 0}
+const initialState: any = {cardData: []}
     export const CardReducer = (state = initialState, action: any) => {
         switch (action.type) {
             case ActionType.cardData:
@@ -8,11 +8,6 @@ const initialState: any = {cardData: [], totalPage: 0}
                   ...state,
                   cardData: action.payload,
                 };
-                case ActionType.totalpage:
-                    return {
-                      ...state,
-                      totalpage: action.payload,
-                    };
               default:
                 return state;
         }
